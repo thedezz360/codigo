@@ -1,0 +1,164 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rubik+Dirt&display=swap');
+
+/* VARIABLE CSS */
+:root {
+  --header-height: 4rem;
+
+  /* COLORS */
+  /* Change favorite color: */
+  /* purple 250, green 142, blue 230, pink 340 */
+  --hue-color: 142;
+
+  /* HSL COLOR MODE */
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color2: hsl(var(--hue-color), 8%, 70%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 100%, 1%);
+  --bgcolor-hover: hsl(var(--hue-color), 5%, 15%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 60%);
+
+  /* FONT AND TYPOGRAPHY */
+  --body-font: 'Poppind', sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /* FONT WEIGHT */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* MARGINS BOTTOM */
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* INDEX */
+  --z-tooltip: 1; /*10*/
+  --z-fixed: 2; /*100*/
+  --z-modal: 3; /*1000*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--body-color);
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header{
+  height: var(--header-height);
+ 
+}
+
+/* ===========>>>>    Generales     <<<<<========== */
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* ===========>>>>    Menu     <<<<<========== */
+nav {
+  width: 100%;
+  position: fixed;
+  height: var(--header-height);
+  background-color: rgba(161, 146, 146, 0.5);
+}
+.nav-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.nav-logo,
+.nav-menu {
+  display: inline-flex;
+  align-self: center;
+}
+
+.nav-logo {
+  padding: 1rem;
+}
+.nav-menu {
+  justify-content: space-around;
+  gap: 2rem;
+  display: none;
+  padding: 0;
+}
+.nav-menu .menu-button .nav-link {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.nav-menu .menu-button:hover .nav-link {
+  color: var(--first-color);
+}
+
+.menu-responsive {
+  display: inline-flex;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.menu-responsive:hover {
+  background-color: var(--bgcolor-hover);
+}
+
+.show-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 65px;
+  width: 100%;
+  align-items: center;
+}
+
+/* ===========>>>>    Hero     <<<<<========== */
+.hero{
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  
+}
+
+.card-perfil{
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 400px;
+}
+

@@ -1,0 +1,86 @@
+
+los objetos renderizados siempre necesitan un contenedor
+
+# crear proyecto react
+npx create-react-app my-app
+-se crea una carpeta my-app con todos los archivos 
+npx create-react-app .
+-se crean todos los archivos en la carpeta en donde estemos ubicados
+cd my-app
+npm start
+-tenemos como archivo principal el index.js
+
+# crear proyecto vite con react
+npm create vite
+npm run dev
+-tenemos como archivo principal main.jsx
+
+# si queremos que la app se llame igual que la carpeta contenedora, agregamos un punto al final
+npm create vite .
+
+#cuando queremos preparar la aplicacion para produccion 
+npm run build
+
+#para usar prop-types
+npm i --save prop-types
+
+##imagenes
+-deben ser importadas con import o require
+
+
+### componentes
+
+--hay dos principales funcionales (funcion) y de clase
+#funcion
+-los de funcion son los que se usan mayormente: es una funcion de javaScript
+que retorna un elemento de React(JSX)
+-deben comenzar con una letra mayúscula.
+-puede recibir valores si es necesario (props). solo se envian de padre a hijo
+-debe retornar un elemento de react
+#clase
+-los de clase fueron los primeros, pero ahora no se usan mucho
+-es una clase de ES6 que retorna un elemento JSX
+-deben extender react.componente
+-deben tener un metodo renderizados
+-puede recibir valores si es necesario
+
+###State 
+Representación en JavaScript del conjunto de propiedades de un componente y sus valores actuales
+
+
+### hooks
+-Es una funcion especial que permite trabajar con estados en componentes funcionalesy otros aspectos en React
+-gracias a los hooks podemos asignar y actualizar el estado de un componente funcional en React con los hooks
+
+#useState: es una funcion que devulelve un array con dos valores, el primero es el valor de la variables
+y es segundo es una funcion para actualizar el valor de la variable.
+en react no podemos crear variables y actuaizarlas para esto utilizamos el useState
+
+#useEffect: cuando el componente es creado se ejecuta el useEffect, que actualiza datos
+primer parametro es una funcion
+el segundo es un array, en el cual asignamos una variable y en cada cambio de esta variable, useEffect se vuelve a ejecutar
+si no queremos que se ejecute cada vez que el componente cambia, ponemos un array vacio []
+
+#useRef: permite crear una referencia mutable que persiste durante todo el ciclo de vida del 
+componente, es util para guardar cualquier valor que deseemos mutar como un identificador, 
+un elemento del dom, como un contador; y que cada vez que cambie NO vuelve a renderizar el componente
+a diferencia del useState, el cual si renderiza el componente con cada cambio.
+
+
+### context
+es un componente el cual contendra a todos los componentes, 
+y todos los componentes podran hacer consultar directas a este, coomo utilizar una funcion del contexto
+o acceder a datos que estan en el contexto
+-el componente context se llama provider
+-el context puede contener todo tipo de valores que deseemos exportar a otros componentes
+
+#createContext es una funcion que nos devulve un objeto
+
+#useContext funcion para utilizar los valores que tenemos en el context
+
+### notes
+
+#eliminar elementos de un array en react
+debemos crear un nuevo array sin el elemento que deseamos eliminar
+
+# la actualizacion de los estados es asincrona
