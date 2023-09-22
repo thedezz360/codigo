@@ -6,50 +6,57 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="./assets/css/fontawesome.css" />
     <link rel="stylesheet" href="./assets/css/solid.css" />
+    <link rel="stylesheet" href="./assets/css/brands.min.css">
+
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
-        <div class="nav-content container">
+        
 
           <div class="nav-logo">Daniel</div>
-  
-          <ul class="nav-menu" id="nav-menu">
-            <li class="menu-button">
-              <a href="#hero" class="nav-link">
-                <i class="fa-solid fa-house menu-icon"></i>
-                <span class="menu-text">Inicio</span>
-              </a>
-            </li>
-  
-            <li class="menu-button">
-              <a href="#sobreMi" class="nav-link">
-                <i class="fa-solid fa-briefcase menu-icon"></i>
-                <span class="menu-text">Sobre mí</span>
-              </a>
-            </li>
-  
-            <li class="menu-button">
-              <a href="#proyectos" class="nav-link">
-                <i class="fa-solid fa-lightbulb menu-icon"></i>
-                <span class="menu-text">Proyectos</span>
-              </a>
-            </li>
-  
-            <li class="menu-button">
-              <a href="#contacto" class="nav-link">
-                <i class="fa-solid fa-paper-plane menu-icon"></i>
-                <span class="menu-text">Contacto</span>
-              </a>
-            </li>
-          </ul>
+          
+          <div class="nav-menu" id="nav-menu">
+
+            
+
+            <ul class="menu-list">
+              <li class="menu-button">
+                <a href="#hero" class="nav-link">
+                  <i class="fa-solid fa-house menu-icon"></i>
+                  <span class="menu-text">Inicio</span>
+                </a>
+              </li>
+    
+              <li class="menu-button">
+                <a href="#sobreMi" class="nav-link">
+                  <i class="fa-solid fa-briefcase menu-icon"></i>
+                  <span class="menu-text">Sobre mí</span>
+                </a>
+              </li>
+    
+              <li class="menu-button">
+                <a href="#proyectos" class="nav-link">
+                  <i class="fa-solid fa-lightbulb menu-icon"></i>
+                  <span class="menu-text">Proyectos</span>
+                </a>
+              </li>
+    
+              <li class="menu-button">
+                <a href="#contacto" class="nav-link">
+                  <i class="fa-solid fa-paper-plane menu-icon"></i>
+                  <span class="menu-text">Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </div>
   
           <div class="menu-responsive" id="menu-responsive">
-            <i class="fa-solid fa-bars menu-resonsive-icon"></i>
+            <i class="fa-solid fa-bars menu-responsive-icon"></i>
           </div>
-        </div>
+        
 
       </nav>
     </header>
@@ -58,7 +65,48 @@
       <section class="hero">
         <div class="container">
           <div class="card-perfil">
+            <div class="card-img">
+              <svg
+                class="perfil-blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="perfil-blob-img"
+                    x="-80"
+                    y="20"
+                    xlink:href="assets/img/perfil.png"
+                  />
+                </g>
+              </svg>
+            </div>
 
+            <div class="card-btns">
+              <i class="fa-brands fa-linkedin perfil-icon"></i>
+              <i class="fa-brands fa-whatsapp perfil-icon"></i>
+            </div>
+
+            <div class="card-data">
+              <h1 class="hero-title">Hola, me llamo <span>Daniel</span></h1>
+              <h3 class="hero-subtitle">Soy desarrollador <span>Frontend</span> y <span>Backend</span></h3>
+              <p class="hero-description">Encantado de formar parte de tu nuevo proyecto.</p>
+            </div>
           </div>
         </div>
 
